@@ -1,0 +1,80 @@
+{
+    "add_hover_pressed": true,
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 30,
+        "width": 100
+    },
+    "display": "Sun/Moon Toggle",
+    "events": {
+        "AAD": {
+            "caption": "is clicked",
+            "name": "clicked"
+        }
+    },
+    "fields": {
+        "AAE": {
+            "caption": "default value",
+            "default_val": false,
+            "doc": "Yes for Dark Theme, No for Light Theme",
+            "editor": "DynamicValue",
+            "name": "default_value",
+            "optional": true,
+            "rank": 0,
+            "value": "boolean"
+        },
+        "AAG": {
+            "caption": "moon emoji",
+            "default_val": "🌙",
+            "doc": "Icon vary per device. Please refer to https://emojipedia.org/search?q=moon",
+            "editor": "Dropdown",
+            "in_style": true,
+            "name": "moon_emoji",
+            "options": "🌑,🌙,🌚,🌝,🌕,🌜,🌛,☾,☽",
+            "rank": 1
+        },
+        "AAH": {
+            "caption": "sun emoji",
+            "default_val": "☀️",
+            "doc": "Icon vary per device. Please refer to https://emojipedia.org/search?q=sun",
+            "editor": "Dropdown",
+            "in_style": true,
+            "name": "sun_emoji",
+            "options": "☀️,🌞,⛅,🌤️,☼",
+            "rank": 2
+        },
+        "AAI": {
+            "caption": "Track Color",
+            "default_val": "rgba(0,0,0,1)",
+            "editor": "Color",
+            "in_style": true,
+            "name": "track_color",
+            "rank": 3
+        },
+        "AAJ": {
+            "caption": "Toggle Color",
+            "default_val": "rgba(255,255,255,1)",
+            "editor": "Color",
+            "in_style": true,
+            "name": "toggle_color",
+            "rank": 4
+        }
+    },
+    "icon": "ion-toggle",
+    "property_applications": {
+        "MinWidth": true,
+        "Padding": true,
+        "resizable": true
+    },
+    "states": {
+        "AAF": {
+            "caption": "is Dark",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\t\n\treturn properties.default_value || false;\n\n}"
+            },
+            "name": "is_dark",
+            "value": "boolean"
+        }
+    }
+}

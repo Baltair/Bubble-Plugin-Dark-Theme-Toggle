@@ -1,0 +1,11 @@
+{
+    "categories": {
+        "0": "containers"
+    },
+    "data_tracked": true,
+    "data_tracked_description": "This author has not yet disclosed their data usage policy. Learn more by contacting the author.",
+    "description": "A free editable toggle for Dark/Light themes. \n(It look better in the app than in the editor)",
+    "image": "//meta-l.cdn.bubble.io/f1695959011481x667744691341674000/theme.png",
+    "license": "open_source",
+    "name": "Dark Theme Toggle"
+}
